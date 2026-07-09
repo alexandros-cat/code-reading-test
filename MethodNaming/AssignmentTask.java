@@ -1,52 +1,59 @@
-// 問1.以下の不適切なメソッド名を修正してください。
+// メソット名の修正
 public class AssignmentTask {
 
   /*
    * パターン1
+  // 先頭には動詞をつける方が良い
    */
-  public void userMessage(User user) {
+  public void sayHello(User user) {
     System.out.println("Hello, " + user.getName());
   }
 
   /*
    * パターン2
+  // 可読性の観点から、メソッド名を短くすること
    */
-  public void getUserMessageAndPrintItToTheConsoleWithHelloPrefixAndUserName(User user) {
+  public void greetHello(User user) {
     System.out.println("Hello, " + user.getName());
   }
 
   /*
    * パターン3
+  // 動詞を先頭に表示する。名前を出力する。
    */
-  public void process(User user) {
+  public void printUserName(User user) {
     System.out.println(user.getName());
   }
 
   /*
    * パターン4
+  // 動詞を先頭に表示する。値を返すため、getにした方が良い。
    */
-  public String userName(User user) {
+  public String getUserName(User user) {
     return user.getName();
   }
 
   /*
    * パターン5: 
+  // キャメルケースにて表示 言葉の区切りに大文字
    */
-  public void print_user_info(User user) {
+  public void printUserInfo(User user) {
     System.out.println(user.getName());
   }
 
   /*
    * パターン6
+  // newの使用は推奨されていないため、表記の変更
    */
-  public User new(String name) {
+  public User createUser(String name) {
     return new User(name);
   }
 
   /*
    * パターン7
+  // ブール値を返すメソッドisを前置すべき
    */
-  public boolean active(User user) {
+  public boolean isActive(User user) {
     return user.isActive();
   }
 
