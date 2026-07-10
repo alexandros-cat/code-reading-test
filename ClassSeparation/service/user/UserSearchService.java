@@ -1,5 +1,5 @@
 // ユーザーの登録のクラスと認証クラスは別のファイルに移動
-public class UserService {
+public class UserSearchService {
 
   private final UserMapper userMapper;
   private final PasswordEncoder passwordEncoder;

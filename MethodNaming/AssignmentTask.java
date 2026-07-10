@@ -3,7 +3,7 @@ public class AssignmentTask {
 
   /*
    * パターン1
-  // 先頭には動詞をつける方が良い
+  // 内部処理を表す動詞 + 対象の名詞
    */
   public void sayHello(User user) {
     System.out.println("Hello, " + user.getName());
@@ -11,7 +11,7 @@ public class AssignmentTask {
 
   /*
    * パターン2
-  // 可読性の観点から、メソッド名を短くすること
+  // 内部処理を表す動詞 + 対象の名詞
    */
   public void greetHello(User user) {
     System.out.println("Hello, " + user.getName());

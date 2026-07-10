@@ -19,16 +19,5 @@ public class  UserRegistrationService {
 
     return userMapper.findById(user.getId());
   }
-
-  // ユーザー退会
-  public void deactivateUser(Long userId) {
-    User user = userMapper.findById(userId);
-    if (user == null) {
-      throw new IllegalArgumentException("存在しません");
-    }
-
-    user.setDeleted(true);
-    userMapper.update(user);
-  }
-
+  
 }
