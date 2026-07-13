@@ -1,28 +1,36 @@
-// 問2.以下の不適切な変数名を修正してください。
+// 変数名を修正
 public class VariableNaming {
 
   public void calculateNumbers() {
     /*
      * パターン1
+    // アンダーバーを削除しキャメル記法に変更
      */
-    int first_number = 10;
-    int Second_Number = 20;
+    int firstNumber = 10;
+    int secondNumber = 20;
 
     /*
      * パターン2
+    // 定義しているものが数値と認識しやすくするため
+    // 1つ目 2つ目と関係性を認識しやすくするため
      */
-    int a = 5;
-    int x = 3;
+    int price = 5;
+    int quantity = 3;
 
     /*
      * パターン3
+    // returnは予約後に該当するため、変数名として使用不可
+    // 変数名を変更し、キャメル記法を使用
      */
-    int return = 100;
+    int resultValue = 100;
 
-    int total_result = first_number + Second_Number;
-    int sum = a + x + return;
+    // アンダーバーを削除し、キャメル記法に変更
+    int totalResult = firstNumber + secondNumber;
+     // 上記変数名変更に伴い計算式も変更
+    int sum = price + quantity  + resultValue;
 
-    System.out.println(total_result);
+      // 出力も変更
+    System.out.println(totalResult);
     System.out.println(sum);
   }
 }
