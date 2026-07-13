@@ -5,7 +5,7 @@ public class AssignmentTask {
    * パターン1
   // 内部処理を表す動詞 + 対象の名詞
    */
-  public void sayHello(User user) {
+  public void printUserMessage (User user) {
     System.out.println("Hello, " + user.getName());
   }
 
@@ -13,9 +13,9 @@ public class AssignmentTask {
    * パターン2
   // 内部処理を表す動詞 + 対象の名詞
    */
-  public void greetHello(User user) {
-    System.out.println("Hello, " + user.getName());
-  }
+    public void displayUserMessage(User user) {
+      System.out.println("Hello, " + user.getName());
+    }
 
   /*
    * パターン3
